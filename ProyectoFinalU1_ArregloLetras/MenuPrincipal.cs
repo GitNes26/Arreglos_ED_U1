@@ -16,5 +16,30 @@ namespace ProyectoFinalU1_ArregloLetras
         {
             InitializeComponent();
         }
+
+        private void Btn_Buscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Insertar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Modificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Eliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

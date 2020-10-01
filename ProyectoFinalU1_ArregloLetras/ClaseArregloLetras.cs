@@ -26,7 +26,7 @@ namespace ProyectoFinalU1_ArregloLetras
 
             if (ArregloLetras.Length < 100)
             {
-                for
+                
             }
             else
             {
