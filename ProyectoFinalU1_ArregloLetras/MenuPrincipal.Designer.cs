@@ -41,6 +41,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 251);
             this.dataGridView1.Name = "dataGridView1";
@@ -55,6 +56,7 @@
             this.Btn_Buscar.TabIndex = 1;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // Btn_Insertar
             // 
@@ -64,6 +66,7 @@
             this.Btn_Insertar.TabIndex = 2;
             this.Btn_Insertar.Text = "Insertar";
             this.Btn_Insertar.UseVisualStyleBackColor = true;
+            this.Btn_Insertar.Click += new System.EventHandler(this.Btn_Insertar_Click);
             // 
             // Btn_Modificar
             // 
@@ -73,6 +76,7 @@
             this.Btn_Modificar.TabIndex = 3;
             this.Btn_Modificar.Text = "Modificar";
             this.Btn_Modificar.UseVisualStyleBackColor = true;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Btn_Eliminar
             // 
@@ -82,6 +86,7 @@
             this.Btn_Eliminar.TabIndex = 4;
             this.Btn_Eliminar.Text = "Eliminar";
             this.Btn_Eliminar.UseVisualStyleBackColor = true;
+            this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
             // 
             // Btn_Salir
             // 
@@ -91,12 +96,14 @@
             this.Btn_Salir.TabIndex = 5;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = true;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(111, 92);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(555, 20);
+            this.textBox1.Size = new System.Drawing.Size(555, 29);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2

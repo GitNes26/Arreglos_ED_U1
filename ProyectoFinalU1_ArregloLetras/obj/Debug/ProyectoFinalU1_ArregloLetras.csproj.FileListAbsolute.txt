@@ -1,0 +1,11 @@
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\obj\Debug\ProyectoFinalU1_ArregloLetras.csprojAssemblyReference.cache
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\obj\Debug\ProyectoFinalU1_ArregloLetras.Inicio.resources
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\obj\Debug\ProyectoFinalU1_ArregloLetras.MenuPrincipal.resources
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\obj\Debug\ProyectoFinalU1_ArregloLetras.Properties.Resources.resources
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\obj\Debug\ProyectoFinalU1_ArregloLetras.csproj.GenerateResource.cache
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\obj\Debug\ProyectoFinalU1_ArregloLetras.csproj.CoreCompileInputs.cache
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\bin\Debug\ProyectoFinalU1_ArregloLetras.exe.config
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\bin\Debug\ProyectoFinalU1_ArregloLetras.exe
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\bin\Debug\ProyectoFinalU1_ArregloLetras.pdb
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\obj\Debug\ProyectoFinalU1_ArregloLetras.exe
+E:\Users\Néstor\Desktop\Estudios UTT\4to Cuatri\Estructura de Datos Aplicadas\Practicas\Arreglos_ED_U1\ProyectoFinalU1_ArregloLetras\obj\Debug\ProyectoFinalU1_ArregloLetras.pdb

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.Btn_Iniciar = new System.Windows.Forms.Button();
-            this.Creditos = new System.Windows.Forms.Button();
+            this.Btn_Creditos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -40,17 +40,19 @@
             this.Btn_Iniciar.Name = "Btn_Iniciar";
             this.Btn_Iniciar.Size = new System.Drawing.Size(188, 43);
             this.Btn_Iniciar.TabIndex = 0;
-            this.Btn_Iniciar.Text = "button1";
+            this.Btn_Iniciar.Text = "Iniciar";
             this.Btn_Iniciar.UseVisualStyleBackColor = true;
+            this.Btn_Iniciar.Click += new System.EventHandler(this.Btn_Iniciar_Click);
             // 
-            // Creditos
+            // Btn_Creditos
             // 
-            this.Creditos.Location = new System.Drawing.Point(73, 279);
-            this.Creditos.Name = "Creditos";
-            this.Creditos.Size = new System.Drawing.Size(188, 43);
-            this.Creditos.TabIndex = 1;
-            this.Creditos.Text = "Créditos";
-            this.Creditos.UseVisualStyleBackColor = true;
+            this.Btn_Creditos.Location = new System.Drawing.Point(73, 279);
+            this.Btn_Creditos.Name = "Btn_Creditos";
+            this.Btn_Creditos.Size = new System.Drawing.Size(188, 43);
+            this.Btn_Creditos.TabIndex = 1;
+            this.Btn_Creditos.Text = "Créditos";
+            this.Btn_Creditos.UseVisualStyleBackColor = true;
+            this.Btn_Creditos.Click += new System.EventHandler(this.Btn_Creditos_Click);
             // 
             // pictureBox1
             // 
@@ -66,7 +68,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 361);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Creditos);
+            this.Controls.Add(this.Btn_Creditos);
             this.Controls.Add(this.Btn_Iniciar);
             this.Name = "Inicio";
             this.Text = "Form1";
@@ -78,7 +80,7 @@
         #endregion
 
         private System.Windows.Forms.Button Btn_Iniciar;
-        private System.Windows.Forms.Button Creditos;
+        private System.Windows.Forms.Button Btn_Creditos;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -16,5 +16,16 @@ namespace ProyectoFinalU1_ArregloLetras
         {
             InitializeComponent();
         }
+
+        private void Btn_Iniciar_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.ShowDialog();
+        }
+
+        private void Btn_Creditos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
