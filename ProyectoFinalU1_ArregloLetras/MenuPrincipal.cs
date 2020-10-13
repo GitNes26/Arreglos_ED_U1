@@ -13,11 +13,12 @@ namespace ProyectoFinalU1_ArregloLetras
     public partial class MenuPrincipal : Form
     {
         ClaseArregloLetras arreglo = new ClaseArregloLetras();
-        int l;
+        int l = 0;
 
         public MenuPrincipal()
         {
             InitializeComponent();
+            
         }
 
         private void Btn_Buscar_Click(object sender, EventArgs e)
@@ -29,12 +30,15 @@ namespace ProyectoFinalU1_ArregloLetras
         {
             try
             {
-                arreglo.Letra = Convert.ToChar(textBox1.Text);
-                arreglo.insertar();
-                for (l=0; l <= arreglo.ArregloLetras.Length;)
+                listBox1.Items.Clear();
+                arreglo.insertar(Convert.ToChar(textBox1.Text));
+                for (int i = 0; i < arreglo.ArregloLetras.Length; i++)
                 {
-
+                    listBox1.Items.Add(arreglo.ArregloLetras[i]);
                 }
+                textBox1.Clear();
+                l++;
+                textBox1.Focus();
             }
             catch (System.FormatException)
             {
@@ -56,7 +60,11 @@ namespace ProyectoFinalU1_ArregloLetras
         {
             try
             {
+                if (Btn_Modificar.Text == "Modificar")
+                {
+                    groupBox1.Visible = true;
 
+                }
             }
             catch (System.FormatException)
             {
