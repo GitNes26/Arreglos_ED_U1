@@ -30,15 +30,30 @@ namespace ProyectoFinalU1_ArregloLetras
         {
             try
             {
-                listBox1.Items.Clear();
-                arreglo.insertar(Convert.ToChar(textBox1.Text));
-                for (int i = 0; i < arreglo.ArregloLetras.Length; i++)
+                if (l < arreglo.ArregloLetras.Length)
                 {
-                    listBox1.Items.Add(arreglo.ArregloLetras[i]);
+                    listBox1.Items.Clear();
+                    arreglo.insertar(Convert.ToChar(textBox1.Text));
+                    for (int i = 0; i < arreglo.ArregloLetras.Length; i++)
+                    {
+                        listBox1.Items.Add("ArregloLetras: " + arreglo.ArregloLetras[i]);
+                    }
+                    for (int i = 0; i < arreglo.ArregloFantasma.Length; i++)
+                    {
+                        listBox1.Items.Add("ArregloFantasma: " + arreglo.ArregloFantasma[i]);
+                    }
+                    for (int i = 0; i < arreglo.ArregloOrdenado.Length; i++)
+                    {
+                        listBox1.Items.Add("ArregloOrdenado: " + arreglo.ArregloOrdenado[i]);
+                    }
+                    textBox1.Clear();
+                    l++;
+                    textBox1.Focus();
                 }
-                textBox1.Clear();
-                l++;
-                textBox1.Focus();
+                else{
+                    textBox1.Enabled = false;
+                    Btn_Insertar.Enabled = false;
+                }
             }
             catch (System.FormatException)
             {
