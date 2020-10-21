@@ -34,16 +34,18 @@
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txBuscador = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txReemplazar = new System.Windows.Forms.TextBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.Btn_Limpiar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Btn_Buscar
             // 
-            this.Btn_Buscar.Location = new System.Drawing.Point(696, 12);
+            this.Btn_Buscar.Location = new System.Drawing.Point(703, 38);
             this.Btn_Buscar.Name = "Btn_Buscar";
             this.Btn_Buscar.Size = new System.Drawing.Size(58, 33);
             this.Btn_Buscar.TabIndex = 1;
@@ -83,9 +85,9 @@
             // 
             // Btn_Salir
             // 
-            this.Btn_Salir.Location = new System.Drawing.Point(573, 80);
+            this.Btn_Salir.Location = new System.Drawing.Point(615, 286);
             this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(181, 45);
+            this.Btn_Salir.Size = new System.Drawing.Size(139, 45);
             this.Btn_Salir.TabIndex = 5;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = true;
@@ -99,13 +101,12 @@
             this.textBox1.Size = new System.Drawing.Size(497, 29);
             this.textBox1.TabIndex = 6;
             // 
-            // textBox2
+            // txBuscador
             // 
-            this.textBox2.Location = new System.Drawing.Point(608, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(82, 20);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "Buscar letra...";
+            this.txBuscador.Location = new System.Drawing.Point(615, 45);
+            this.txBuscador.Name = "txBuscador";
+            this.txBuscador.Size = new System.Drawing.Size(82, 20);
+            this.txBuscador.TabIndex = 7;
             // 
             // listBox1
             // 
@@ -117,7 +118,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txReemplazar);
             this.groupBox1.Location = new System.Drawing.Point(195, 133);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(139, 64);
@@ -125,22 +126,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reemplazar por";
             // 
-            // textBox3
+            // txReemplazar
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(21, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(94, 29);
-            this.textBox3.TabIndex = 7;
+            this.txReemplazar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txReemplazar.Location = new System.Drawing.Point(21, 19);
+            this.txReemplazar.Name = "txReemplazar";
+            this.txReemplazar.Size = new System.Drawing.Size(94, 29);
+            this.txReemplazar.TabIndex = 7;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(615, 80);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(139, 199);
+            this.listBox2.TabIndex = 10;
+            // 
+            // Btn_Limpiar
+            // 
+            this.Btn_Limpiar.Location = new System.Drawing.Point(195, 286);
+            this.Btn_Limpiar.Name = "Btn_Limpiar";
+            this.Btn_Limpiar.Size = new System.Drawing.Size(139, 45);
+            this.Btn_Limpiar.TabIndex = 11;
+            this.Btn_Limpiar.Text = "Limpiar TODO";
+            this.Btn_Limpiar.UseVisualStyleBackColor = true;
+            this.Btn_Limpiar.Click += new System.EventHandler(this.Btn_Limpiar_Click);
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 343);
+            this.Controls.Add(this.Btn_Limpiar);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txBuscador);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Eliminar);
@@ -164,9 +185,11 @@
         private System.Windows.Forms.Button Btn_Eliminar;
         private System.Windows.Forms.Button Btn_Salir;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txBuscador;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txReemplazar;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button Btn_Limpiar;
     }
 }
