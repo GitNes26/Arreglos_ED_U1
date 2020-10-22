@@ -15,6 +15,7 @@ namespace ProyectoFinalU1_ArregloLetras
         public Inicio()
         {
             InitializeComponent();
+            this.Height = 350;
         }
 
         private void Btn_Iniciar_Click(object sender, EventArgs e)
@@ -25,7 +26,14 @@ namespace ProyectoFinalU1_ArregloLetras
 
         private void Btn_Creditos_Click(object sender, EventArgs e)
         {
-
+            if (Btn_Creditos.Text == "Créditos (↓)"){
+                this.Height = 600;
+                Btn_Creditos.Text = "Créditos (↑)";
+            }
+            else {
+                this.Height = 350;
+                Btn_Creditos.Text = "Créditos (↓)";
+            }
         }
     }
 }

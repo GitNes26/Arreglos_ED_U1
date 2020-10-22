@@ -61,15 +61,19 @@ namespace ProyectoFinalU1_ArregloLetras
                 }
             }
         }
+        public void reiniciar()
+        {
+            Array.Clear(ArregloLetras, 0, ArregloLetras.Length);
+            Array.Clear(ArregloOrdenado, 0, ArregloOrdenado.Length);
+            Array.Clear(Encontradas, 0, Encontradas.Length);
+            A = 0; C = 0; o = 0;
+        }
 
         public void insertar(char letra)
         {
-            if (A < ArregloLetras.Length)
-            {
                 ArregloLetras[A] = letra;
                 acomodo();
                 A++;
-            }
         }
 
         public void modificar(char Modificar, char Reemplazo)
